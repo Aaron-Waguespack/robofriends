@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect} from 'react';
+import React, { Component} from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
@@ -11,7 +11,7 @@ class App extends Component{
 			robots:[],
 			searchfield:""
 		}
-	}
+	}	
 
 	componentDidMount() {
 		fetch('https://jsonplaceholder.typicode.com/users')
@@ -38,7 +38,7 @@ class App extends Component{
 				<Scroll>
 					<CardList robots ={filteredRobots}/>
 				</Scroll>
-			</div>
+			</div>	
 		  );
 		};
 	};
